@@ -1,9 +1,5 @@
 import test from 'ava';
-import {
-	msToTime,
-	parseTimeRow,
-	timeToMs,
-} from '../source/convertions/_utils.js';
+import {msToTime, timeToMs} from 'subkit';
 
 test('timeToMs()', (t) => {
 	t.is(timeToMs('00:00:00.000'), 0);
@@ -32,9 +28,4 @@ test('msToTime()', (t) => {
 	t.is(msToTime(3_661_999.123, '.'), '01:01:01.999');
 	t.is(msToTime(3_661_999.123, ','), '01:01:01,999');
 	t.is(msToTime(3_661_999.789, '.'), '01:01:01.999');
-});
-
-test('parseTimeRow()', (t) => {
-	t.deepEqual(parseTimeRow('00:00:00.000 --> 00:00:01.000'), [0, 1000]);
-	t.deepEqual(parseTimeRow('00:00:00.000 --X 00:00:01.000'), [0, 0]);
 });

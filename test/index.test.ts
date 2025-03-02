@@ -13,7 +13,7 @@ import {
 	vttToData,
 	vttToFcpxml,
 	vttToSrt,
-} from '../source/index.js';
+} from 'subkit';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

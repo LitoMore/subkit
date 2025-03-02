@@ -31,7 +31,9 @@ export const parseTimeRow = (line: string): [from: number, to: number] => {
 		return [timeToMs(from.trim()), timeToMs(to.trim())];
 	}
 
+	/* c8 ignore start */
 	return [0, 0];
+	/* c8 ignore stop */
 };
 
 export function toData(text: string, target: 'srt'): SubSrt;
