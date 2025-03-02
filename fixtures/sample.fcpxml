@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fcpxml version="1.9">
+	<resources>
+		<format id="r1" name="FFVideoFormat1080p3000" frameDuration="100/3000" width="1920"
+			height="1080" colorSpace="1-1-1 (Rec. 709)" />
+		<effect id="r2" name="Basic Title"
+			uid=".../Titles.localized/Bumper:Opener.localized/Basic Title.localized/Basic Title.moti" />
+	</resources>
+	<library>
+		<event name="srt2subtitles-cli">
+			<project name="sample">
+				<sequence format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k"
+					duration="3312/3000s">
+					<spine>
+						<gap name="Gap" offset="0s" duration="331200/3000s">
+							<title ref="r2" lane="1" offset="84600/3000s" duration="4200/3000s"
+								name="谢谢 - Basic Title">
+								<param name="Position" key="9999/999166631/999166633/1/100/101" value="0 -465" />
+								<param name="Flatten" key="999/999166631/999166633/2/351" value="1" />
+								<param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401"
+									value="1 (Center)" />
+								<text>
+									<text-style ref="ts0">谢谢</text-style>
+								</text>
+								<text-style-def id="ts0">
+									<text-style font="Helvetica" fontSize="45" fontFace="Regular" fontColor="1 1 1 1"
+										bold="1" shadowColor="0 0 0 0.75" shadowOffset="4 315" alignment="center" />
+								</text-style-def>
+							</title>
+							<title ref="r2" lane="1" offset="130700/3000s" duration="8600/3000s"
+								name="-你有钥匙吗 先生？
+-有 - Basic Title">
+								<param name="Position" key="9999/999166631/999166633/1/100/101" value="0 -465" />
+								<param name="Flatten" key="999/999166631/999166633/2/351" value="1" />
+								<param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401"
+									value="1 (Center)" />
+								<text>
+									<text-style ref="ts1">-你有钥匙吗 先生？
+										-有</text-style>
+								</text>
+								<text-style-def id="ts1">
+									<text-style font="Helvetica" fontSize="45" fontFace="Regular" fontColor="1 1 1 1"
+										bold="1" shadowColor="0 0 0 0.75" shadowOffset="4 315" alignment="center" />
+								</text-style-def>
+							</title>
+							<title ref="r2" lane="1" offset="216300/3000s" duration="3000/3000s"
+								name="大灯 - Basic Title">
+								<param name="Position" key="9999/999166631/999166633/1/100/101" value="0 -465" />
+								<param name="Flatten" key="999/999166631/999166633/2/351" value="1" />
+								<param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401"
+									value="1 (Center)" />
+								<text>
+									<text-style ref="ts2">大灯</text-style>
+								</text>
+								<text-style-def id="ts2">
+									<text-style font="Helvetica" fontSize="45" fontFace="Regular" fontColor="1 1 1 1"
+										bold="1" shadowColor="0 0 0 0.75" shadowOffset="4 315" alignment="center" />
+								</text-style-def>
+							</title>
+							<title ref="r2" lane="1" offset="219500/3000s" duration="6600/3000s"
+								name="大灯 开大灯 - Basic Title">
+								<param name="Position" key="9999/999166631/999166633/1/100/101" value="0 -465" />
+								<param name="Flatten" key="999/999166631/999166633/2/351" value="1" />
+								<param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401"
+									value="1 (Center)" />
+								<text>
+									<text-style ref="ts3">大灯 开大灯</text-style>
+								</text>
+								<text-style-def id="ts3">
+									<text-style font="Helvetica" fontSize="45" fontFace="Regular" fontColor="1 1 1 1"
+										bold="1" shadowColor="0 0 0 0.75" shadowOffset="4 315" alignment="center" />
+								</text-style-def>
+							</title>
+							<title ref="r2" lane="1" offset="238800/3000s" duration="5100/3000s"
+								name="大家准备好了吗 - Basic Title">
+								<param name="Position" key="9999/999166631/999166633/1/100/101" value="0 -465" />
+								<param name="Flatten" key="999/999166631/999166633/2/351" value="1" />
+								<param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401"
+									value="1 (Center)" />
+								<text>
+									<text-style ref="ts4">大家准备好了吗</text-style>
+								</text>
+								<text-style-def id="ts4">
+									<text-style font="Helvetica" fontSize="45" fontFace="Regular" fontColor="1 1 1 1"
+										bold="1" shadowColor="0 0 0 0.75" shadowOffset="4 315" alignment="center" />
+								</text-style-def>
+							</title>
+							<title ref="r2" lane="1" offset="250400/3000s" duration="5800/3000s"
+								name="聚光灯 - Basic Title">
+								<param name="Position" key="9999/999166631/999166633/1/100/101" value="0 -465" />
+								<param name="Flatten" key="999/999166631/999166633/2/351" value="1" />
+								<param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401"
+									value="1 (Center)" />
+								<text>
+									<text-style ref="ts5">聚光灯</text-style>
+								</text>
+								<text-style-def id="ts5">
+									<text-style font="Helvetica" fontSize="45" fontFace="Regular" fontColor="1 1 1 1"
+										bold="1" shadowColor="0 0 0 0.75" shadowOffset="4 315" alignment="center" />
+								</text-style-def>
+							</title>
+							<title ref="r2" lane="1" offset="325900/3000s" duration="5300/3000s"
+								name="谢谢大家 - Basic Title">
+								<param name="Position" key="9999/999166631/999166633/1/100/101" value="0 -465" />
+								<param name="Flatten" key="999/999166631/999166633/2/351" value="1" />
+								<param name="Alignment" key="9999/999166631/999166633/2/354/999169573/401"
+									value="1 (Center)" />
+								<text>
+									<text-style ref="ts6">谢谢大家</text-style>
+								</text>
+								<text-style-def id="ts6">
+									<text-style font="Helvetica" fontSize="45" fontFace="Regular" fontColor="1 1 1 1"
+										bold="1" shadowColor="0 0 0 0.75" shadowOffset="4 315" alignment="center" />
+								</text-style-def>
+							</title>
+						</gap>
+					</spine>
+				</sequence>
+			</project>
+		</event>
+	</library>
+</fcpxml>

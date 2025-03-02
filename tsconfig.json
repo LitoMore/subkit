@@ -1,0 +1,4 @@
+{
+  "extends": "@sindresorhus/tsconfig",
+  "include": ["source", "test"],
+}

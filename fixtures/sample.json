@@ -1,0 +1,350 @@
+{
+	"?xml": {
+		"@_version": "1.0",
+		"@_encoding": "UTF-8"
+	},
+	"fcpxml": {
+		"resources": {
+			"format": {
+				"@_id": "r1",
+				"@_name": "FFVideoFormat1080p3000",
+				"@_frameDuration": "100/3000",
+				"@_width": "1920",
+				"@_height": "1080",
+				"@_colorSpace": "1-1-1 (Rec. 709)"
+			},
+			"effect": {
+				"@_id": "r2",
+				"@_name": "Basic Title",
+				"@_uid": ".../Titles.localized/Bumper:Opener.localized/Basic Title.localized/Basic Title.moti"
+			}
+		},
+		"library": {
+			"event": {
+				"project": {
+					"sequence": {
+						"spine": {
+							"gap": {
+								"title": [
+									{
+										"param": [
+											{
+												"@_name": "Position",
+												"@_key": "9999/999166631/999166633/1/100/101",
+												"@_value": "0 -465"
+											},
+											{
+												"@_name": "Flatten",
+												"@_key": "999/999166631/999166633/2/351",
+												"@_value": "1"
+											},
+											{
+												"@_name": "Alignment",
+												"@_key": "9999/999166631/999166633/2/354/999169573/401",
+												"@_value": "1 (Center)"
+											}
+										],
+										"text": {
+											"text-style": {
+												"#text": "谢谢",
+												"@_ref": "ts0"
+											}
+										},
+										"text-style-def": {
+											"text-style": {
+												"@_font": "Helvetica",
+												"@_fontSize": "45",
+												"@_fontFace": "Regular",
+												"@_fontColor": "1 1 1 1",
+												"@_bold": "1",
+												"@_shadowColor": "0 0 0 0.75",
+												"@_shadowOffset": "4 315",
+												"@_alignment": "center"
+											},
+											"@_id": "ts0"
+										},
+										"@_ref": "r2",
+										"@_lane": "1",
+										"@_offset": "84600/3000s",
+										"@_duration": "4200/3000s",
+										"@_name": "谢谢 - Basic Title"
+									},
+									{
+										"param": [
+											{
+												"@_name": "Position",
+												"@_key": "9999/999166631/999166633/1/100/101",
+												"@_value": "0 -465"
+											},
+											{
+												"@_name": "Flatten",
+												"@_key": "999/999166631/999166633/2/351",
+												"@_value": "1"
+											},
+											{
+												"@_name": "Alignment",
+												"@_key": "9999/999166631/999166633/2/354/999169573/401",
+												"@_value": "1 (Center)"
+											}
+										],
+										"text": {
+											"text-style": {
+												"#text": "-你有钥匙吗 先生？\n-有",
+												"@_ref": "ts1"
+											}
+										},
+										"text-style-def": {
+											"text-style": {
+												"@_font": "Helvetica",
+												"@_fontSize": "45",
+												"@_fontFace": "Regular",
+												"@_fontColor": "1 1 1 1",
+												"@_bold": "1",
+												"@_shadowColor": "0 0 0 0.75",
+												"@_shadowOffset": "4 315",
+												"@_alignment": "center"
+											},
+											"@_id": "ts1"
+										},
+										"@_ref": "r2",
+										"@_lane": "1",
+										"@_offset": "130700/3000s",
+										"@_duration": "8600/3000s",
+										"@_name": "-你有钥匙吗 先生？\n-有 - Basic Title"
+									},
+									{
+										"param": [
+											{
+												"@_name": "Position",
+												"@_key": "9999/999166631/999166633/1/100/101",
+												"@_value": "0 -465"
+											},
+											{
+												"@_name": "Flatten",
+												"@_key": "999/999166631/999166633/2/351",
+												"@_value": "1"
+											},
+											{
+												"@_name": "Alignment",
+												"@_key": "9999/999166631/999166633/2/354/999169573/401",
+												"@_value": "1 (Center)"
+											}
+										],
+										"text": {
+											"text-style": {
+												"#text": "大灯",
+												"@_ref": "ts2"
+											}
+										},
+										"text-style-def": {
+											"text-style": {
+												"@_font": "Helvetica",
+												"@_fontSize": "45",
+												"@_fontFace": "Regular",
+												"@_fontColor": "1 1 1 1",
+												"@_bold": "1",
+												"@_shadowColor": "0 0 0 0.75",
+												"@_shadowOffset": "4 315",
+												"@_alignment": "center"
+											},
+											"@_id": "ts2"
+										},
+										"@_ref": "r2",
+										"@_lane": "1",
+										"@_offset": "216300/3000s",
+										"@_duration": "3000/3000s",
+										"@_name": "大灯 - Basic Title"
+									},
+									{
+										"param": [
+											{
+												"@_name": "Position",
+												"@_key": "9999/999166631/999166633/1/100/101",
+												"@_value": "0 -465"
+											},
+											{
+												"@_name": "Flatten",
+												"@_key": "999/999166631/999166633/2/351",
+												"@_value": "1"
+											},
+											{
+												"@_name": "Alignment",
+												"@_key": "9999/999166631/999166633/2/354/999169573/401",
+												"@_value": "1 (Center)"
+											}
+										],
+										"text": {
+											"text-style": {
+												"#text": "大灯 开大灯",
+												"@_ref": "ts3"
+											}
+										},
+										"text-style-def": {
+											"text-style": {
+												"@_font": "Helvetica",
+												"@_fontSize": "45",
+												"@_fontFace": "Regular",
+												"@_fontColor": "1 1 1 1",
+												"@_bold": "1",
+												"@_shadowColor": "0 0 0 0.75",
+												"@_shadowOffset": "4 315",
+												"@_alignment": "center"
+											},
+											"@_id": "ts3"
+										},
+										"@_ref": "r2",
+										"@_lane": "1",
+										"@_offset": "219500/3000s",
+										"@_duration": "6600/3000s",
+										"@_name": "大灯 开大灯 - Basic Title"
+									},
+									{
+										"param": [
+											{
+												"@_name": "Position",
+												"@_key": "9999/999166631/999166633/1/100/101",
+												"@_value": "0 -465"
+											},
+											{
+												"@_name": "Flatten",
+												"@_key": "999/999166631/999166633/2/351",
+												"@_value": "1"
+											},
+											{
+												"@_name": "Alignment",
+												"@_key": "9999/999166631/999166633/2/354/999169573/401",
+												"@_value": "1 (Center)"
+											}
+										],
+										"text": {
+											"text-style": {
+												"#text": "大家准备好了吗",
+												"@_ref": "ts4"
+											}
+										},
+										"text-style-def": {
+											"text-style": {
+												"@_font": "Helvetica",
+												"@_fontSize": "45",
+												"@_fontFace": "Regular",
+												"@_fontColor": "1 1 1 1",
+												"@_bold": "1",
+												"@_shadowColor": "0 0 0 0.75",
+												"@_shadowOffset": "4 315",
+												"@_alignment": "center"
+											},
+											"@_id": "ts4"
+										},
+										"@_ref": "r2",
+										"@_lane": "1",
+										"@_offset": "238800/3000s",
+										"@_duration": "5100/3000s",
+										"@_name": "大家准备好了吗 - Basic Title"
+									},
+									{
+										"param": [
+											{
+												"@_name": "Position",
+												"@_key": "9999/999166631/999166633/1/100/101",
+												"@_value": "0 -465"
+											},
+											{
+												"@_name": "Flatten",
+												"@_key": "999/999166631/999166633/2/351",
+												"@_value": "1"
+											},
+											{
+												"@_name": "Alignment",
+												"@_key": "9999/999166631/999166633/2/354/999169573/401",
+												"@_value": "1 (Center)"
+											}
+										],
+										"text": {
+											"text-style": {
+												"#text": "聚光灯",
+												"@_ref": "ts5"
+											}
+										},
+										"text-style-def": {
+											"text-style": {
+												"@_font": "Helvetica",
+												"@_fontSize": "45",
+												"@_fontFace": "Regular",
+												"@_fontColor": "1 1 1 1",
+												"@_bold": "1",
+												"@_shadowColor": "0 0 0 0.75",
+												"@_shadowOffset": "4 315",
+												"@_alignment": "center"
+											},
+											"@_id": "ts5"
+										},
+										"@_ref": "r2",
+										"@_lane": "1",
+										"@_offset": "250400/3000s",
+										"@_duration": "5800/3000s",
+										"@_name": "聚光灯 - Basic Title"
+									},
+									{
+										"param": [
+											{
+												"@_name": "Position",
+												"@_key": "9999/999166631/999166633/1/100/101",
+												"@_value": "0 -465"
+											},
+											{
+												"@_name": "Flatten",
+												"@_key": "999/999166631/999166633/2/351",
+												"@_value": "1"
+											},
+											{
+												"@_name": "Alignment",
+												"@_key": "9999/999166631/999166633/2/354/999169573/401",
+												"@_value": "1 (Center)"
+											}
+										],
+										"text": {
+											"text-style": {
+												"#text": "谢谢大家",
+												"@_ref": "ts6"
+											}
+										},
+										"text-style-def": {
+											"text-style": {
+												"@_font": "Helvetica",
+												"@_fontSize": "45",
+												"@_fontFace": "Regular",
+												"@_fontColor": "1 1 1 1",
+												"@_bold": "1",
+												"@_shadowColor": "0 0 0 0.75",
+												"@_shadowOffset": "4 315",
+												"@_alignment": "center"
+											},
+											"@_id": "ts6"
+										},
+										"@_ref": "r2",
+										"@_lane": "1",
+										"@_offset": "325900/3000s",
+										"@_duration": "5300/3000s",
+										"@_name": "谢谢大家 - Basic Title"
+									}
+								],
+								"@_name": "Gap",
+								"@_offset": "0s",
+								"@_duration": "331200/3000s"
+							}
+						},
+						"@_format": "r1",
+						"@_tcStart": "0s",
+						"@_tcFormat": "NDF",
+						"@_audioLayout": "stereo",
+						"@_audioRate": "48k",
+						"@_duration": "3312/3000s"
+					},
+					"@_name": "sample"
+				},
+				"@_name": "srt2subtitles-cli"
+			}
+		},
+		"@_version": "1.9"
+	}
+}
