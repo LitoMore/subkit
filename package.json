@@ -1,7 +1,7 @@
 {
 	"name": "subkit",
 	"version": "0.0.0",
-	"description": "Subtitles toolkit",
+	"description": "The subtitles toolkit for converting between SRT, WebVTT, and FCPXML",
 	"type": "module",
 	"exports": "./distribution/index.js",
 	"types": "distribution",
@@ -20,7 +20,11 @@
 	},
 	"repository": "https://github.com/LitoMore/subkit",
 	"keywords": [
-		"subkit"
+		"subkit",
+		"subtitles",
+		"srt",
+		"vtt",
+		"fcpxml"
 	],
 	"author": "LitoMore",
 	"license": "MIT",

@@ -1,5 +1,7 @@
 # subkit
 
+The subtitles tool kit for converting between SRT, WebVTT, and FCPXML.
+
 ## Install
 
 ```shell
@@ -51,7 +53,7 @@ This accepts a [`SubLike`](./docs/types.md#sublike) data as input. The [`separat
 
 ### FCPXML
 
-#### fcpxmlToData(text: string): SubFcpxmlv
+#### fcpxmlToData(text: string): SubFcpxml
 
 This converts FCPXML text context to a [`SubFcpxml`](./docs/types.md#subfcpxml) data object.
 
