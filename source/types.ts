@@ -2,22 +2,43 @@ export type Separator = ',' | '.';
 
 export type SubLike = SubSrt | SubVtt | SubFcpxml;
 
+export type SubSrtItem = {
+	from: number;
+	to: number;
+	duration: number;
+	text: string;
+};
+
 export type SubSrt = {
-	items: Array<{
-		from: number;
-		to: number;
-		duration: number;
-		text: string;
-	}>;
+	items: SubSrtItem[];
+};
+
+export type SubVttItem = {
+	from: number;
+	to: number;
+	duration: number;
+	text: string;
 };
 
 export type SubVtt = {
-	items: Array<{
-		from: number;
-		to: number;
-		duration: number;
-		text: string;
-	}>;
+	items: SubVttItem[];
+};
+
+export type SubFcpxmlItem = {
+	text: string;
+	from: number;
+	to: number;
+	duration: number;
+	font: string;
+	fontSize: string;
+	fontFace: string;
+	fontColor: string;
+	bold: string;
+	shadowColor: string;
+	shadowOffset: string;
+	alignment: string;
+	titleOffset: string;
+	titleDuration: string;
 };
 
 export type SubFcpxml = {
@@ -25,20 +46,5 @@ export type SubFcpxml = {
 	fps: number;
 	gapDuration: string;
 	sequenceDuration: string;
-	items: Array<{
-		text: string;
-		from: number;
-		to: number;
-		duration: number;
-		font: string;
-		fontSize: string;
-		fontFace: string;
-		fontColor: string;
-		bold: string;
-		shadowColor: string;
-		shadowOffset: string;
-		alignment: string;
-		titleOffset: string;
-		titleDuration: string;
-	}>;
+	items: SubFcpxmlItem[];
 };

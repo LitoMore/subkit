@@ -79,3 +79,13 @@ export function toData(text: string, target: 'srt' | 'vtt'): SubSrt | SubVtt {
 
 	return {items};
 }
+
+export const detectFormat = (text: string) => {
+	const fcpxmlPattern = /<fcpxml version="\d+(?:\.\d)*">/;
+	const timeRangePattern = /\d+:\d+:\d+[.,]\d+\s+-->\s+\d+:\d+:\d+[.,]\d+/;
+
+	if (text.startsWith('WEBVTT')) return 'vtt';
+	if (timeRangePattern.test(text)) return 'srt';
+	if (fcpxmlPattern.test(text)) return 'fcpxml';
+	return undefined;
+};

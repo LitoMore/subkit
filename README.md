@@ -74,6 +74,10 @@ We've defined some convertion aliases for converting between two subs. Available
 
 ### Utilities
 
+#### detectFormat(text: string): 'srt' | 'vtt' | 'fcpxml' | undefined
+
+This can be used to make a quick detection of your subtitles file.
+
 #### msToTime(ms: string, separator?: Separator): string
 
 This converts the milliseconds to time string for SRT or VTT.

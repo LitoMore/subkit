@@ -1,5 +1,10 @@
 import test from 'ava';
-import {msToTime, timeToMs} from 'subkit';
+import {detectFormat, msToTime, timeToMs} from 'subkit';
+import {sampleFcpxml, sampleSrt, sampleVtt} from './_helpers.test.js';
+
+const srtText = await sampleSrt();
+const vttText = await sampleVtt();
+const fcpxmlText = await sampleFcpxml();
 
 test('timeToMs()', (t) => {
 	t.is(timeToMs('00:00:00.000'), 0);
@@ -28,4 +33,11 @@ test('msToTime()', (t) => {
 	t.is(msToTime(3_661_999.123, '.'), '01:01:01.999');
 	t.is(msToTime(3_661_999.123, ','), '01:01:01,999');
 	t.is(msToTime(3_661_999.789, '.'), '01:01:01.999');
+});
+
+test('detectFormat()', (t) => {
+	t.is(detectFormat(srtText), 'srt');
+	t.is(detectFormat(vttText), 'vtt');
+	t.is(detectFormat(fcpxmlText), 'fcpxml');
+	t.is(detectFormat(''), undefined);
 });
