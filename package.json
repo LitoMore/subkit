@@ -15,6 +15,7 @@
 		"prepublishOnly": "npm run build",
 		"build": "del-cli distribution && tsc",
 		"dev": "del-cli distribution && tsc --watch",
+		"pretest": "npm run build",
 		"test": "xo && c8 ava"
 	},
 	"repository": "https://github.com/LitoMore/subkit",
