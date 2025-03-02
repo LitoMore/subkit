@@ -63,7 +63,7 @@ This accepts a [`SubLike`](./docs/types.md#sublike) and `fps` as input. And some
 
 ### Convertions
 
-We've defined some convertion aliases for converting between two subs. Available convertion aliaes are:
+We've defined some convertion aliases for converting between two subs. Available convertion aliases are:
 
 - `srtToVtt(text: string, separator?: Separator)`
 - `vttToSrt(text: string, separator?: Separator)`
