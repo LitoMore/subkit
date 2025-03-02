@@ -1,6 +1,6 @@
 {
 	"name": "subkit",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "The subtitles toolkit for converting between SRT, WebVTT, and FCPXML",
 	"type": "module",
 	"exports": "./distribution/source/index.js",
