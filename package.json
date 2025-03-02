@@ -9,8 +9,7 @@
 		"node": ">=18"
 	},
 	"files": [
-		"distribution",
-		"!distribution/test"
+		"distribution/source"
 	],
 	"scripts": {
 		"prepublishOnly": "npm run build",
