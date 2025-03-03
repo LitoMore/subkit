@@ -36,7 +36,7 @@
 									value="1 (Center)" />
 								<text>
 									<text-style ref="ts1">-你有钥匙吗 先生？
-										-有</text-style>
+-有</text-style>
 								</text>
 								<text-style-def id="ts1">
 									<text-style font="Helvetica" fontSize="45" fontFace="Regular" fontColor="1 1 1 1"

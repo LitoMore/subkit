@@ -28,5 +28,6 @@ export const approxMatch = (
 		approxEqual(t, fcpxmlClip.from, srtClip.from);
 		approxEqual(t, fcpxmlClip.to, srtClip.to);
 		approxEqual(t, fcpxmlClip.duration, srtClip.duration);
+		t.is(fcpxmlClip.text, srtClip.text);
 	}
 };
