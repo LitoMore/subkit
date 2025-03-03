@@ -1,12 +1,14 @@
 # subkit
 
-The subtitles tool kit for converting between SRT, WebVTT, and FCPXML.
+The subtitles toolkit for converting between SRT, WebVTT, and FCPXML
 
 ## Install
 
 ```shell
 npm i subkit
 ```
+
+For CLI usages, see [subkit-cli](https://github.com/LitoMore/subkit-cli).
 
 ## Usage
 
@@ -85,6 +87,10 @@ This converts the milliseconds to time string for SRT or VTT.
 #### timeToMs(time: string): number
 
 This converts the SRT or VTT time string to milliseconds.
+
+## Related
+
+- [subkit-cli](https://github.com/LitoMore/subkit-cli) - CLI for this module
 
 ## License
 
