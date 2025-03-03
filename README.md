@@ -27,6 +27,7 @@ const fcpxml = dataToFcpxml(data);
 
 // Convert SRT to FCPXML with convertion aliases
 const fcpxml_ = srtToFcpxml(srt);
+
 console.log(fcpxml === fcpxml_);
 // Output => true
 ```
