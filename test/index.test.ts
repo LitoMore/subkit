@@ -1,5 +1,11 @@
 import test from 'ava';
 import {
+	approxMatch,
+	sampleFcpxml,
+	sampleSrt,
+	sampleVtt,
+} from './_helpers.test.js';
+import {
 	fcpxmlToData,
 	fcpxmlToSrt,
 	fcpxmlToVtt,
@@ -10,12 +16,6 @@ import {
 	vttToFcpxml,
 	vttToSrt,
 } from 'subkit';
-import {
-	approxMatch,
-	sampleFcpxml,
-	sampleSrt,
-	sampleVtt,
-} from './_helpers.test.js';
 
 const srtText = await sampleSrt();
 const vttText = await sampleVtt();
