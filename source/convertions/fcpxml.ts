@@ -247,7 +247,7 @@ export const dataToFcpxml = (
 	};
 	/* eslint-enable @typescript-eslint/naming-convention */
 
-	const xml = builder.build(xmlData) as string;
+	const xml = builder.build(xmlData);
 	if (typeof xml === 'string') return xml;
 	/* c8 ignore start */
 	throw new Error('Failed to build XML');
