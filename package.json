@@ -12,10 +12,10 @@
 		"distribution/source"
 	],
 	"scripts": {
-		"prepublishOnly": "npm run build",
+		"prepublishOnly": "node --run build",
 		"build": "del-cli distribution && tsc",
 		"dev": "del-cli distribution && tsc --watch",
-		"pretest": "npm run build",
+		"pretest": "node --run build",
 		"test": "xo && c8 ava"
 	},
 	"repository": "https://github.com/LitoMore/subkit",
@@ -40,6 +40,6 @@
 		"del-cli": "^7.0.0",
 		"eslint-plugin-import": "^2.32.0",
 		"typescript": "^5.9.3",
-		"xo": "^1.2.3"
+		"xo": "^2.0.2"
 	}
 }

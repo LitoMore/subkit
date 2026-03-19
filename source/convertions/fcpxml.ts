@@ -53,6 +53,7 @@ const msToFrame = (ms: number, fps: number) => Math.floor(ms / (1000 / fps));
 
 export const fcpxmlToData = (text: string): SubFcpxml => {
 	const parser = new XMLParser({ignoreAttributes: false});
+	// eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion
 	const data = parser.parse(text) as XmlDataPartial;
 
 	const formatName = data.fcpxml.resources.format['@_name'];

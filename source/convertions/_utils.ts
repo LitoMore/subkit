@@ -1,7 +1,7 @@
 import {Separator, SubSrt, SubVtt} from '../types.js';
 
 export const timeToMs = (time: string) => {
-	const timePattern = /^(?<h>\d+):(?<m>\d+):(?<s>\d+)[.,](?<ss>\d+)$/;
+	const timePattern = /^(?<h>\d+):(?<m>\d+):(?<s>\d+)[.,](?<ss>\d+)$/v;
 	const match = timePattern.exec(time);
 	const {h = '0', m = '0', s = '0', ss = '0'} = match?.groups ?? {};
 	return (
@@ -39,7 +39,7 @@ export const parseTimeRow = (line: string): [from: number, to: number] => {
 export function toData(text: string, target: 'srt'): SubSrt;
 export function toData(text: string, target: 'vtt'): SubVtt;
 export function toData(text: string, target: 'srt' | 'vtt'): SubSrt | SubVtt {
-	const timeLinePattern = /^\d+:\d+:\d+[.,]\d+\s+-->\s+\d+:\d+:\d+[.,]\d+$/;
+	const timeLinePattern = /^\d+:\d+:\d+[.,]\d+\s+-->\s+\d+:\d+:\d+[.,]\d+$/v;
 	const lines = text.split('\n');
 	const blocks: string[][] = [];
 	let firstTurn = true;
@@ -51,16 +51,14 @@ export function toData(text: string, target: 'srt' | 'vtt'): SubSrt | SubVtt {
 			const formattedTimeLine = line.replaceAll(',', '.');
 			if (firstTurn) {
 				block.shift();
-				block = [];
-				block.push(formattedTimeLine);
+				block = [formattedTimeLine];
 				firstTurn = false;
 			}
 
 			if (block.length > 1) {
 				if (target === 'srt') block.pop();
 				blocks.push(block);
-				block = [];
-				block.push(formattedTimeLine);
+				block = [formattedTimeLine];
 			}
 		} else if (line.trim() !== '') {
 			block.push(line);
@@ -81,8 +79,8 @@ export function toData(text: string, target: 'srt' | 'vtt'): SubSrt | SubVtt {
 }
 
 export const detectFormat = (text: string) => {
-	const fcpxmlPattern = /<fcpxml version="\d+(?:\.\d)*">/;
-	const timeRangePattern = /\d+:\d+:\d+[.,]\d+\s+-->\s+\d+:\d+:\d+[.,]\d+/;
+	const fcpxmlPattern = /<fcpxml version="\d+(?:\.\d)*">/v;
+	const timeRangePattern = /\d+:\d+:\d+[.,]\d+\s+-->\s+\d+:\d+:\d+[.,]\d+/v;
 
 	if (text.startsWith('WEBVTT')) return 'vtt';
 	if (timeRangePattern.test(text)) return 'srt';
