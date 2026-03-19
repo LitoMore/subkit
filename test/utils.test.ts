@@ -1,6 +1,6 @@
 import test from 'ava';
-import {detectFormat, msToTime, timeToMs} from 'subkit';
 import {sampleFcpxml, sampleSrt, sampleVtt} from './_helpers.test.js';
+import {detectFormat, msToTime, timeToMs} from 'subkit';
 
 const srtText = await sampleSrt();
 const vttText = await sampleVtt();
